@@ -1,0 +1,21 @@
+---
+include:
+- board: halcyon_dongle
+  shield: halcyon_kyria_dongle mod_cirque_central
+  artifact-name: kyria_dongle
+  cmake-args: -DCONFIG_ZMK_STUDIO=y
+  snippet: studio-rpc-usb-uart
+- board: halcyon_wireless
+  shield: halcyon_kyria_left mod_battery_coincell
+  artifact-name: kyria_left_cc
+  cmake-args: -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
+- board: halcyon_wireless
+  shield: halcyon_kyria_right mod_battery_coincell
+  artifact-name: kyria_right_cc
+- board: halcyon_wireless
+  shield: halcyon_kyria_left mod_battery_lipo
+  artifact-name: kyria_left_lp
+  cmake-args: -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
+- board: halcyon_wireless
+  shield: halcyon_kyria_right mod_battery_lipo
+  artifact-name: kyria_right_lp
