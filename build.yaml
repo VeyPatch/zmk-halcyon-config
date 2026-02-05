@@ -19,3 +19,7 @@ include:
 - board: halcyon_wireless
   shield: halcyon_kyria_right mod_battery_lipo
   artifact-name: kyria_right_lp
+- board: halcyon_wireless
+  shield: settings_reset
+- board: halcyon_dongle
+  shield: settings_reset
