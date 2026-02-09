@@ -10,11 +10,6 @@ include:
   artifact-name: kyria_left_cc
   cmake-args: -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
 - board: halcyon_wireless
-  shield: halcyon_kyria_left mod_battery_coincell mod_cirque_central
-  artifact-name: kyria_left_cc_central
-  cmake-args: -DCONFIG_ZMK_STUDIO=y
-  snippet: studio-rpc-usb-uart
-- board: halcyon_wireless
   shield: halcyon_kyria_right mod_battery_coincell
   artifact-name: kyria_right_cc
 - board: halcyon_wireless
@@ -22,18 +17,22 @@ include:
   artifact-name: kyria_left_cc_epaper
   cmake-args: -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
 - board: halcyon_wireless
-  shield: halcyon_kyria_left mod_battery_coincell mod_display_epaper mod_cirque_central
-  artifact-name: kyria_left_cc_epaper_central
-  cmake-args: -DCONFIG_ZMK_STUDIO=y
-  snippet: studio-rpc-usb-uart
-- board: halcyon_wireless
   shield: halcyon_kyria_right mod_battery_coincell mod_display_epaper
   artifact-name: kyria_right_cc_epaper
 - board: halcyon_wireless
-  shield: halcyon_kyria_left mod_battery_coincell mod_cirque_central_hw
-  artifact-name: kyria_left_cc_cirque_central
-  cmake-args: -DCONFIG_ZMK_STUDIO=y
-  snippet: studio-rpc-usb-uart
+  shield: halcyon_kyria_left mod_battery_coincell mod_display_tft
+  artifact-name: kyria_left_cc_tft
+  cmake-args: -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
+- board: halcyon_wireless
+  shield: halcyon_kyria_right mod_battery_coincell mod_display_tft
+  artifact-name: kyria_right_cc_tft
+- board: halcyon_wireless
+  shield: halcyon_kyria_left mod_battery_coincell mod_display_mip
+  artifact-name: kyria_left_cc_mip
+  cmake-args: -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
+- board: halcyon_wireless
+  shield: halcyon_kyria_right mod_battery_coincell mod_display_mip
+  artifact-name: kyria_right_cc_mip
 - board: halcyon_wireless
   shield: halcyon_kyria_left mod_battery_coincell mod_cirque_hw_left
   artifact-name: kyria_left_cc_cirque
@@ -46,22 +45,12 @@ include:
   artifact-name: kyria_left_cc_encoder
   cmake-args: -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
 - board: halcyon_wireless
-  shield: halcyon_kyria_left mod_battery_coincell mod_encoder_left mod_cirque_central
-  artifact-name: kyria_left_cc_encoder_central
-  cmake-args: -DCONFIG_ZMK_STUDIO=y
-  snippet: studio-rpc-usb-uart
-- board: halcyon_wireless
   shield: halcyon_kyria_right mod_battery_coincell mod_encoder_right
   artifact-name: kyria_right_cc_encoder
 - board: halcyon_wireless
   shield: halcyon_kyria_left mod_battery_lipo
   artifact-name: kyria_left_lp
   cmake-args: -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
-- board: halcyon_wireless
-  shield: halcyon_kyria_left mod_battery_lipo mod_cirque_central
-  artifact-name: kyria_left_lp_central
-  cmake-args: -DCONFIG_ZMK_STUDIO=y
-  snippet: studio-rpc-usb-uart
 - board: halcyon_wireless
   shield: halcyon_kyria_right mod_battery_lipo
   artifact-name: kyria_right_lp
@@ -70,18 +59,22 @@ include:
   artifact-name: kyria_left_lp_epaper
   cmake-args: -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
 - board: halcyon_wireless
-  shield: halcyon_kyria_left mod_battery_lipo mod_display_epaper mod_cirque_central
-  artifact-name: kyria_left_lp_epaper_central
-  cmake-args: -DCONFIG_ZMK_STUDIO=y
-  snippet: studio-rpc-usb-uart
-- board: halcyon_wireless
   shield: halcyon_kyria_right mod_battery_lipo mod_display_epaper
   artifact-name: kyria_right_lp_epaper
 - board: halcyon_wireless
-  shield: halcyon_kyria_left mod_battery_lipo mod_cirque_central_hw
-  artifact-name: kyria_left_lp_cirque_central
-  cmake-args: -DCONFIG_ZMK_STUDIO=y
-  snippet: studio-rpc-usb-uart
+  shield: halcyon_kyria_left mod_battery_lipo mod_display_tft
+  artifact-name: kyria_left_lp_tft
+  cmake-args: -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
+- board: halcyon_wireless
+  shield: halcyon_kyria_right mod_battery_lipo mod_display_tft
+  artifact-name: kyria_right_lp_tft
+- board: halcyon_wireless
+  shield: halcyon_kyria_left mod_battery_lipo mod_display_mip
+  artifact-name: kyria_left_lp_mip
+  cmake-args: -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
+- board: halcyon_wireless
+  shield: halcyon_kyria_right mod_battery_lipo mod_display_mip
+  artifact-name: kyria_right_lp_mip
 - board: halcyon_wireless
   shield: halcyon_kyria_left mod_battery_lipo mod_cirque_hw_left
   artifact-name: kyria_left_lp_cirque
@@ -93,11 +86,6 @@ include:
   shield: halcyon_kyria_left mod_battery_lipo mod_encoder_left
   artifact-name: kyria_left_lp_encoder
   cmake-args: -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
-- board: halcyon_wireless
-  shield: halcyon_kyria_left mod_battery_lipo mod_encoder_left mod_cirque_central
-  artifact-name: kyria_left_lp_encoder_central
-  cmake-args: -DCONFIG_ZMK_STUDIO=y
-  snippet: studio-rpc-usb-uart
 - board: halcyon_wireless
   shield: halcyon_kyria_right mod_battery_lipo mod_encoder_right
   artifact-name: kyria_right_lp_encoder
