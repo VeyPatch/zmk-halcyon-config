@@ -13,6 +13,9 @@ include:
   shield: halcyon_kyria_right mod_battery_coincell
   artifact-name: kyria_right_cc
 - board: halcyon_wireless//zmk
+  shield: halcyon_kyria_right mod_battery_lipo mod_display_mip
+  artifact-name: kyria_right_lp_mip
+- board: halcyon_wireless//zmk
   shield: settings_reset
 - board: halcyon_dongle//zmk
   shield: settings_reset
