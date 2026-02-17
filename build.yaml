@@ -1,18 +1,18 @@
 ---
 include:
-- board: halcyon_dongle
+- board: halcyon_dongle//zmk
   shield: halcyon_kyria_dongle
   artifact-name: kyria_dongle
   cmake-args: -DCONFIG_ZMK_STUDIO=y
   snippet: studio-rpc-usb-uart
-- board: halcyon_wireless
+- board: halcyon_wireless//zmk
   shield: halcyon_kyria_left mod_battery_coincell
   artifact-name: kyria_left_cc
   cmake-args: -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
-- board: halcyon_wireless
+- board: halcyon_wireless//zmk
   shield: halcyon_kyria_right mod_battery_coincell
   artifact-name: kyria_right_cc
-- board: halcyon_wireless
+- board: halcyon_wireless//zmk
   shield: settings_reset
-- board: halcyon_dongle
+- board: halcyon_dongle//zmk
   shield: settings_reset
