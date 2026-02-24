@@ -23,3 +23,6 @@ include:
 - board: halcyon_wireless//zmk
   shield: halcyon_kyria_right mod_battery_lipo mod_display_mip
   artifact-name: kyria_right_lp_mip
+- board: halcyon_wireless//zmk
+  shield: halcyon_kyria_right mod_battery_lipo mod_encoder_right
+  artifact-name: kyria_right_lp_encoder
